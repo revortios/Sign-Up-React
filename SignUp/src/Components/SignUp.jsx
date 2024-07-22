@@ -3,15 +3,16 @@ import "./SignUp.css"
 
 const SignUp = () => {
 
-    let a = "password"
+    
 
   return (
     <div className='container'>
        
-        
-        <input type="text" placeholder='Name' />
-        <input type="text" placeholder='Email Id' />
-        <input type={a} placeholder='Password' />
+        <input type="text" placeholder='Name' className='input' />
+        <input type="text" placeholder='Email Id' className='input' />
+        <input type="password" placeholder='Password' className='input' />
+
+        <i className="gg-eye"></i>
         
 
         <button>Sign Up</button>

@@ -1,26 +1,56 @@
-*{
-    background-color: brown;
-}
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/eye.css');
 
-
-.container {
-    margin: 20px;
-    padding: 20px;
-    background-color: blueviolet;
-    display: flex;
     
+.container{
+    background-color: violet;
+    margin: 50px;
+    padding: 25px;
+    position: center;
 
 }
 
-.container input {
-    background-color: white;
-    color:white;
-    margin: 20px;
-    padding: 10px;
+.input {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+
+
+.gg-eye {
     position: relative;
-    display: flex;
-}
-
-.container button {
-    background-color: azure;
-}
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 24px;
+    height: 18px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    overflow: hidden;
+    box-sizing: border-box
+   }
+   
+   .gg-eye::after,
+   .gg-eye::before {
+    content: "";
+    display: block;
+    border-radius: 100px;
+    position: absolute;
+    box-sizing: border-box
+   }
+   
+   .gg-eye::after {
+    top: 2px;
+    box-shadow:
+    inset 0 -8px 0 2px,
+    inset 0 0 0 2px;
+    width: 24px;
+    height: 24px
+   }
+   
+   .gg-eye::before {
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    bottom: 4px;
+    left: 8px
+   } 
