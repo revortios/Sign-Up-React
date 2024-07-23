@@ -15,8 +15,8 @@ const SignUp = () => {
         <i className="gg-eye"></i>
         
 
-        <button>Sign Up</button>
-        <button>Login</button>
+        <button className='button'>Sign Up</button>
+        <button className='button'>Login</button>
         
     </div>
   )
