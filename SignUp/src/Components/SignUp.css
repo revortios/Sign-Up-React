@@ -24,4 +24,7 @@
 .button {
     display: block;
     margin-bottom: 10px;
+    padding: 20px;
+    gap: 10px;
 }
+
